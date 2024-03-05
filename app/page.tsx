@@ -1,113 +1,266 @@
+"use client"
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+const array = [
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+  {
+    title: "Vì sao Nguyễn Thùy Linh không có HLV?",
+    subTitle:
+      "Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ của HLV.",
+  },
+];
 
 export default function Home() {
+  const router = useRouter()
+
+  const navigationToDetail = () => {
+    router.push("/detail")
+  }
+
+  const navigationToHome = () => {
+    router.push("/")
+  }
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className=" w-[100%] h-[100%] flex items-center justify-center bg-white">
+      <div className="max-w-[1300px] w-[100%] h-[100%] ">
+        <header className="h-[100px] border-b-2 border-[#ccc] flex items-center justify-between ">
+          <h1 className="text-[25px] font-[600] cursor-pointer" onClick={navigationToHome}>News</h1>
+          <ul className="flex justify-between items-center gap-8 ">
+            <li className="cursor-pointer hover:border-b-4 border-black">
+              Kinh Tế
+            </li>
+            <li className="cursor-pointer hover:border-b-4 border-black">
+              Công Nghệ
+            </li>
+            <li className="cursor-pointer hover:border-b-4 border-black">
+              Sức khỏe
+            </li>
+            <li className="cursor-pointer hover:border-b-4 border-black">
+              Thể Thao
+            </li>
+            <li className="cursor-pointer hover:border-b-4 border-black">
+              Giải Trí
+            </li>
+            <li className="cursor-pointer hover:border-b-4 border-black">
+              Đời Sống
+            </li>
+          </ul>
+        </header>
+        <div className="h-[400px] w-[100%] relative my-[50px] overflow-hidden rounded-2xl">
+          <Image
+            layout="fill"
+            objectFit="cover"
+            alt="banner"
+            src="/banner.jpg"
+          />
+          <h1 className="absolute top-[120px] right-[500px] text-[80px] font-[800] text-white">
+            Banner
+          </h1>
         </div>
+        <div className="w-[100%] h-auto flex items-start justify-center border-t-2 border-[#ccc]">
+          <div className="w-[70%] h-[100%] flex flex-col items-center justify-center my-[20px] border-r-2 border-[#ccc]">
+            {array.map((item, index) => (
+              <>
+                <div className="w-[100%] h-[200px]  flex items-center justify-center border-[#ccc]">
+                  <div className="w-[30%] h-[100%] relative">
+                    <Image
+                      src="/1.jpg"
+                      layout="fill"
+                      alt="1"
+                      objectFit="cover"
+                      className="p-[20px] rounded-3xl cursor-pointer"
+                      onClick={navigationToDetail}
+                    />
+                  </div>
+                  <div className="w-[70%] h-[100%] p-[10px] flex flex-col">
+                    <p onClick={navigationToDetail} className="text-[30px] font-[600] cursor-pointer hover:text-blue-400">
+                      {item?.title}
+                    </p>
+                    <p onClick={navigationToDetail} className="text-[16px] cursor-pointer">
+                      {item?.subTitle}
+                    </p>
+                  </div>
+                </div>
+                <div className="w-[100%] h-[200px]  flex items-center justify-center relative ">
+                  <Image
+                    src="/car.jpg"
+                    layout="fill"
+                    alt="1"
+                    objectFit="cover"
+                    className="p-[20px] rounded-3xl cursor-pointer"
+                  />
+                  <p className="absolute top-[80px] left-[400px] text-white text-[25px] font-[600] cursor-pointer">
+                    ADS
+                  </p>
+                </div>
+              </>
+            ))}
+          </div>
+          <div className="w-[30%] h-[700px] my-[20px] flex items-start justify-center ">
+            <div className="w-[100%] h-auto flex flex-col items-center justify-center gap-[10px]">
+              <div className="h-[150px]  flex items-start justify-center w-[90%] my-[10px] ">
+                <div className="flex flex-col gap-[5px] w-[70%]">
+                  <h1 onClick={navigationToDetail} className="w-[100%] h-auto text-[18px] font-[600] cursor-pointer hover:text-blue-400">
+                    Vì sao Nguyễn Thùy Linh không có HLV?
+                  </h1>
+                  <p onClick={navigationToDetail} className="text-[15px] line-clamp-3 cursor-pointer">
+                    Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam
+                    Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ
+                    của HLV.
+                  </p>
+                </div>
+                <div onClick={navigationToDetail} className="w-[30%] h-[100%] relative">
+                  <Image
+                    src="/1.jpg"
+                    layout="fill"
+                    alt="1"
+                    objectFit="cover"
+                    className=" cursor-pointer"
+                  />
+                </div>
+              </div>
+              <div className="h-[150px]  flex items-start justify-center w-[90%] my-[10px] ">
+                <div className="flex flex-col gap-[5px] w-[70%]">
+                  <h1 onClick={navigationToDetail} className="w-[100%] h-auto text-[18px] font-[600] cursor-pointer hover:text-blue-400">
+                    Vì sao Nguyễn Thùy Linh không có HLV?
+                  </h1>
+                  <p onClick={navigationToDetail} className="text-[15px] line-clamp-3 cursor-pointer">
+                    Kinh phí hạn hẹp buộc tay vợt cầu lông nữ số một Việt Nam
+                    Nguyễn Thùy Linh phải thi đấu quốc tế mà không có sự hỗ trợ
+                    của HLV.
+                  </p>
+                </div>
+                <div onClick={navigationToDetail} className="w-[30%] h-[100%] relative">
+                  <Image
+                    src="/1.jpg"
+                    layout="fill"
+                    alt="1"
+                    objectFit="cover"
+                    className=" cursor-pointer"
+                  />
+                </div>
+              </div>
+              <div className="h-[150px]  flex items-start justify-center w-[90%] my-[10px] relative">
+                <Image
+                  src="/1.jpg"
+                  layout="fill"
+                  alt="1"
+                  objectFit="cover"
+                  className=" cursor-pointer"
+                />
+              </div>
+              <div className="h-[300px]  flex flex-col items-center justify-center w-[90%] my-[10px] border-2 border-[#f6f4f4] rounded-lg">
+                <ul className="flex flex-col items-end justify-center h-[100%] w-[100%]">
+                  <li className=" hover:bg-[#f6f4f4] cursor-pointer w-[100%] h-[100%] flex items-center justify-center">
+                    Kinh Tế
+                  </li>
+                  <li className=" hover:bg-[#f6f4f4] cursor-pointer w-[100%] h-[100%] flex items-center justify-center">
+                    Công Nghệ
+                  </li>
+                  <li className=" hover:bg-[#f6f4f4] cursor-pointer w-[100%] h-[100%] flex items-center justify-center">
+                    Sức khỏe
+                  </li>
+                  <li className=" hover:bg-[#f6f4f4] cursor-pointer w-[100%] h-[100%] flex items-center justify-center">
+                    Thể Thao
+                  </li>
+                  <li className=" hover:bg-[#f6f4f4] cursor-pointer w-[100%] h-[100%] flex items-center justify-center">
+                    Giải Trí
+                  </li>
+                  <li className=" hover:bg-[#f6f4f4] cursor-pointer w-[100%] h-[100%] flex items-center justify-center">
+                    Đời Sống
+                  </li>
+                </ul>
+              </div>
+
+              <div className="h-[150px]  flex items-start justify-center w-[90%] my-[10px] relative">
+                <Image
+                  src="/1.jpg"
+                  layout="fill"
+                  alt="1"
+                  objectFit="cover"
+                  className=" cursor-pointer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer className="h-[300px] border-t-2 border-[#ccc] py-[40px] px-[100px] flex flex-col items-center justify-center">
+          <div className="flex items-start justify-between h-[250px] w-[100%] ">
+            <p className="text-[25px] font-[600]">NEWS</p>
+            <div className="flex items-start justify-center gap-[60px]">
+              <div className="flex flex-col">
+                <p className="font-bold">DANH MỤC</p>
+                <p className="text-[15px]">Kinh tế</p>
+                <p className="text-[15px]">Công nghệ</p>
+                <p className="text-[15px]">Sức khỏe</p>
+                <p className="text-[15px]">Thể thao</p>
+                <p className="text-[15px]">Giải trí</p>
+                <p className="text-[15px]">Đời sống</p>
+              </div>
+              <div className="flex flex-col">
+                <p className="font-bold">LIÊN HỆ</p>
+                <p className="text-[15px]">Facebook</p>
+                <p className="text-[15px]">Tiktok</p>
+                <p className="text-[15px]">Instagram</p>
+              </div>
+              <div className="flex flex-col">
+                <p className="font-bold">ĐỊA CHỈ</p>
+                <p className="text-[15px]">Hai Ba Trung, Ha Noi</p>
+              </div>
+            </div>
+          </div>
+          <p className="text-[15px] text-[#918e8e] ">
+          © 2005-2024 Bản quyền thuộc về NEWS. Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.
+          </p>
+        </footer>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
